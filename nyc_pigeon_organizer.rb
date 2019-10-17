@@ -30,6 +30,7 @@ def nyc_pigeon_organizer(data)
         if pigeon_list[name] == nil
           pigeon_list[name] = {}
         end
+        binding.pry
         if pigeon_list[name][attribute] == nil
           pigeon_list[name][attribute] = []
         end
