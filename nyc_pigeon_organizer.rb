@@ -18,7 +18,7 @@ pigeon_data = {
       }
 
 #Create a hash where pigeon names are the keys, with each name pointing to a hash of their attributes
-#Iterate over the hash above, collecting each pigeon by name and insert it as the key of a new hash
+  #Iterate over the hash above, collecting each pigeon by name and insert it as the key of a new hash
 
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
