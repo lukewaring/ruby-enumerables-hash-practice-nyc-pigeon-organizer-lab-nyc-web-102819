@@ -1,3 +1,5 @@
+require 'pry'
+
 pigeon_data = {
         :color => {
           :purple => ["Theo", "Peter Jr.", "Lucky"],
@@ -23,6 +25,7 @@ pigeon_data = {
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
   data.map do |attribute, value|
+    binding.pry
     value.map do |sub_attribute, names|
       names.map do |name|
         if pigeon_list[name] == nil
