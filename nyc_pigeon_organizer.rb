@@ -27,7 +27,7 @@ def nyc_pigeon_organizer(data)
   data.map do |attribute, value|
     value.map do |sub_attribute, names|
       names.map do |name|
-        if pigeon_list[name] == nil
+        if !pigeon_list[name]
           pigeon_list[name] = {}
         end
         if pigeon_list[name][attribute] == nil
