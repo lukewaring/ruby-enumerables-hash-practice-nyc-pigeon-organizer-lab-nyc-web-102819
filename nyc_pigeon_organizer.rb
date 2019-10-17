@@ -32,7 +32,6 @@ def nyc_pigeon_organizer(data)
         end
         if !pigeon_list[name][attribute]
           pigeon_list[name][attribute] = []
-          binding.pry
         end
         pigeon_list[name][attribute].push(sub_attribute.to_s)
       end
